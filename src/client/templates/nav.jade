@@ -1,0 +1,35 @@
+div.navbar.navbar-fixed-top.navbar-default(role='navigation')
+
+	div.navbar-header
+
+		button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-collapse')
+			span.sr-only Toggle navigation
+			span.icon-bar
+			span.icon-bar
+			span.icon-bar
+
+	div#navbar-collapse.collapse.navbar-collapse
+		
+		div.container
+			ul.nav.navbar-nav
+
+				each nav in navs
+					klass = nav.id == sel ? 'active' : ''
+					li(class=klass)
+						a(href='##{nav.url}') #{nav.title}
+
+			ul.nav.navbar-nav.navbar-right
+				li.dropdown
+					a.dropdown-toggle(href='#', data-toggle='dropdown') Welcome, user&nbsp;
+						b.caret
+
+					ul.dropdown-menu
+						li
+							a(href='#')
+								i.glyphicons.envelope
+								| &nbsp;Contact support
+						li.divider
+						li
+							a(href=logout)
+								i.glyphicons.log_out
+								| &nbsp;Log out

@@ -1,0 +1,22 @@
+{
+  "name": "templatizer-test",
+  "version": "0.0.1",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.1.1",
+    "jade": "^1.3.1"
+  },
+  "devDependencies": {
+    "coffee-script": "*",
+    "gulp": "*",
+    "gulp-clean": "*",
+    "gulp-coffee": "*",
+    "gulp-ignore": "*",
+    "gulp-jade": "*",
+    "gulp-less": "*",
+    "gulp-nodemon": "*",
+    "gulp-watch": "*",
+    "templatizer": "*",
+    "underscore": "*"
+  }
+}

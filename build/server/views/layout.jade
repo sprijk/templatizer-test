@@ -1,0 +1,18 @@
+doctype html
+html(lang='en')
+	head
+
+		// meta
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+		// styles
+		link(rel='stylesheet', href='/css/app.css')
+
+		// requirejs
+		script(src='/js/third-party/requirejs/require.js', data-main='/js/app/main')
+
+	body
+		// app
+		block app
+		// end app
